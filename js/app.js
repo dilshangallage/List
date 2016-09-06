@@ -2,7 +2,7 @@ var app = angular.module("MyApp", []);
 
 
 app.controller("TodoController",function ($scope){
-    $scope.appTitle = "ToDo List";
+    $scope.appTitle = "ToDo List........";
     $scope.saved = localStorage.getItem('todos');
    //$scope.saveds= localStorage.getItem('Todos');
     $scope.todos = (localStorage.getItem('todos')!==null) ? JSON.parse($scope.saved) : [ {text: 'Learn AngularJS', done: false}, {text: 'Build an Angular app', done: false} ];
